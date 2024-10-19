@@ -1,5 +1,4 @@
--- 培训sql
-create table `jeecg-boot`.training_certificate
+create table `test`.training_certificate
 (
     id_card_number      varchar(25)  null comment '身份证号',
     certificate_type    varchar(25)  null comment '证书类型',
@@ -11,13 +10,13 @@ create table `jeecg-boot`.training_certificate
 )
     comment '培训证书列表';
 
-create table `jeecg-boot`.training_record
+create table `test`.training_record
 (
     id_card_number   varchar(25)   null comment '身份证号',
     training_type    varchar(25)   null comment '培训类别',
     training_name    varchar(100)  null comment '培训名称',
     training_content varchar(1000) null comment '培训内容',
-    training_time    varchar(25)   null comment '培训时间',
+    training_time    varchar(100)   null comment '培训时间',
     training_company varchar(25)   null comment '培训单位',
     training_place   varchar(25)   null,
     training_teacher varchar(25)   null,

@@ -8,10 +8,10 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # 数据库连接信息
 db_config = {
-    "host": "192.168.3.89",
+    "host": "192.168.1.1",
     "user": "root",
     "password": "123456",
-    "database": "jeecg-boot",
+    "database": "test",
     "charset": "utf8mb4"
 }
 
@@ -255,5 +255,5 @@ def process_folder(folder_path):
         connection.close()
         logging.info("数据库连接已关闭。")
 
-folder_path = "C:\\Users\\jingy\\Desktop\\python需求"  # 存放入库信息Excel的文件夹
+folder_path = "C:\\Users\\\Desktop\\模板\\"  # 存放入库信息Excel的文件夹
 process_folder(folder_path)
